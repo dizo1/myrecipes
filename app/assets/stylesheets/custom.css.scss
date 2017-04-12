@@ -6,6 +6,14 @@ $navbar-default-bg: #03486d;
 .center{
     text-align: center;
 }
+#truer{
+    color:black;
+}
+.jumbotron{
+    background-image: asset-url('salmon1.jpg');
+    background-size:cover;
+    height:500px;
+}
 
 #logo {
     float:left;
