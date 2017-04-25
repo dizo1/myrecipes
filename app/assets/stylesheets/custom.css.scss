@@ -19,11 +19,15 @@ $navbar-default-bg: #03486d;
     background-size:cover;
     height:500px;
 }
+.row{
+    position:relative;
+    height:250px;
+}
 
 #logo {
     float:left;
     font-size: 1.7em;
-    color:fff;
+    color:#fff;
     text-transform:uppercase;
     letter-spacing: -1px;
     font-weight:bold;
@@ -42,17 +46,33 @@ $navbar-default-bg: #03486d;
     text-decoration:none;
 }
 
-.footer{
+#footer{
     background-color:#03486d;
-    height:80px;
-    width:100%;
-    position:absolute;
-    bottom:0;
-    left:0;
+    margin-top: 45px;
+      padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+  padding-left: 10px;
+  padding-right: 10px;
+    
 }
-.footer p{
+    
+#footer p{
     color:#fff;
-    margin-top:30px;
+    margin-top:40px;
     text-align:center;
 }
 
+.description{
+    margin-top:0;
+    }
+.colormatch a {
+    color:#03486d;
+}
+.well a {
+    color:#03486d;
+}
+
+.chef_info{
+    margin-top:10px;
+}
