@@ -5,3 +5,6 @@
         
     </div>
 </div>
+
+<h4 align="center"><%= @chef.chefname %>'s recipes</h4>
+<%= render 'recipes/recipe', obj:@chef.recipes %>
