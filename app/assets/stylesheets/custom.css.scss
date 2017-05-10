@@ -46,6 +46,10 @@ $navbar-default-bg: #03486d;
     text-decoration:none;
 }
 
+#well{
+    margin-bottom:0px;
+}
+
 #footer{
     background-color:#03486d;
     margin-top: 45px;
@@ -82,4 +86,14 @@ $navbar-default-bg: #03486d;
     a{
         color:#fff;
     }
+}
+
+.listing{
+    list-style:none;
+    padding-left:0;
+}
+.chef-title{
+    color:#03486d;
+    font-weight:bold;
+    font-size: 1.25em;
 }
