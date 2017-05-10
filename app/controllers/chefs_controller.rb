@@ -7,11 +7,16 @@ class ChefsController < ApplicationController
     def create
         @chef = Chef.new(chef_params)
         if @chef.save
-            
+            flash[:success] = "Welcome #{@chef.chefname} to Myrecipes App!"
+            redirect_to chef_path(@chef)   
         else
             render 'new'
+        end
     end
-end
+    
+    def show
+        
+    end
     
     private
     
