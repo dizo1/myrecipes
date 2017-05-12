@@ -50,15 +50,19 @@ $navbar-default-bg: #03486d;
     margin-bottom:0px;
 }
 
+html,
+body {
+ height: 100%;
+ position: relative;
+}
+
 #footer{
     background-color:#03486d;
-    margin-top: 45px;
-      padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
-  padding-left: 10px;
-  padding-right: 10px;
-    
+    position:relative;
+    height:80px;
+    top:10px;
+    bottom:0px;
+    width:100%;
 }
     
 #footer p{
