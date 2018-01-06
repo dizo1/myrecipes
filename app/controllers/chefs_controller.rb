@@ -1,6 +1,6 @@
 class ChefsController < ApplicationController
     
-    before_action :set_chef, only: [:show, :edit, :update, :delete]
+    before_action :set_chef, only: [:show, :edit, :update, :destroy]
     before_action :require_same_user, only: [:edit, :update, :destroy]
     
     
@@ -41,7 +41,6 @@ class ChefsController < ApplicationController
     end
     
     def destroy
-        @chef = Chef.find(params[:id])
         @chef.destroy
         flash[:danger] = "chef and all associated recipes have been deleted"
         redirect_to chefs_path
