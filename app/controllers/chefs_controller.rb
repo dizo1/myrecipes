@@ -48,6 +48,7 @@ class ChefsController < ApplicationController
         flash[:danger] = "chef and all associated recipes have been deleted"
         redirect_to chefs_path
     end
+end
     
     private
     
@@ -71,6 +72,6 @@ class ChefsController < ApplicationController
             if logged_in? && !current_chef.admin?
                 flash[:danger] = "Only Admins can do that!"
                 redirect_to root_path
+            end
         end
-    end
     end
