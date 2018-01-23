@@ -43,6 +43,7 @@ class ChefsController < ApplicationController
     end
     
     def destroy
+        if !@chef.admin?
         @chef.destroy
         flash[:danger] = "chef and all associated recipes have been deleted"
         redirect_to chefs_path
