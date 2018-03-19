@@ -7,6 +7,16 @@ $navbar-default-bg: #03486d;
     text-align: center;
 }
 
+
+.navbar-default .navbar-nav > li > a {
+   color: white; /*Change active text color here*/
+    }
+    
+.navbar-default .navbar-nav > li > a:hover {
+   color: white; /*Change active text color here*/
+   text-decoration: none;
+}
+
 .jumbotron h1,h2{
     color:black;
     text-align:center;
