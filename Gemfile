@@ -24,7 +24,8 @@ gem 'coffee-rails', '~> 4.2'
 
 gem 'activeadmin'
 
-
+gem 'rmagick', '~> 2.16'
+gem 'carrierwave', '~> 1.2', '>=1.2.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
