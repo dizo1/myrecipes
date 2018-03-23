@@ -2,7 +2,7 @@
 <div class="well col-md-8 col-md-offset-2">
     <h4 class="center description"><strong>How to: </strong></h4>
     <hr />
-    <%= simple_format(@recipe.description) %>
+    <%= simple_format(@recipe.description, wrapper_tag: "p") %>
     <hr />
     <div class="pull-right">
         <p class="center">

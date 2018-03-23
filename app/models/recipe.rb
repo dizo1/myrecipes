@@ -6,4 +6,6 @@ class Recipe < ApplicationRecord
     default_scope -> {order(updated_at: :desc)}
     
     mount_uploader :image, ImageUploader
+    has_many :recipe_ingredients
+    has_many :ingredients, through: :recipe_ingredients
 end
