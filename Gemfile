@@ -22,6 +22,8 @@ gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+gem 'fog'
+gem 'mini_magick'
 gem 'activeadmin'
 
 gem 'rmagick', '~> 2.16'
@@ -35,6 +37,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
+gem 'nokogiri', '~> 1.8.2'
 gem 'bcrypt', '~> 3.1.7'
 gem 'will_paginate', '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
@@ -63,7 +66,7 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.11'
 end
 
 
