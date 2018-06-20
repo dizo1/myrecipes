@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     end
     
     mount ActionCable.server => '/cable'
+    get '/chat', to: 'chatrooms#show'
    
    get '/signup', to: 'chefs#new'
    resources :chefs, except: [:new]
